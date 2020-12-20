@@ -49,6 +49,11 @@ body{
   align-items: center;
   text-transform: uppercase;
 }
+
+.menu-item {
+  text-decoration: none;
+  color: #fff;
+}
 .menu-item:hover {
   font-weight: 700;
 }
