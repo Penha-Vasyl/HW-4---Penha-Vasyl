@@ -1,24 +1,48 @@
-.wrapper {
+body {
+  margin: 0;
+}
+
+.background {
   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(./img/Rectangle\ 3.jpg);
   background-size: cover;
-  background-repeat: no-repeat;  
-  height: 782px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;
+}
+
+.wrapper {
   font-family: 'Lato';
   color: #fff;
-  position: relative;
-  box-sizing: border-box; 
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1;
 }
 
 .header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: center;
   align-items: center;
-  padding-top: 30px; 
+  padding: 30px 180px;
 }
 
 .logo {
-  margin-left: 180px;
-  padding: 0px;  
+  padding: 0px;
+  display: flex;
 }
 
 .logo2 {
@@ -28,6 +52,12 @@
   font-size: 18px;
   line-height: 22px;
   margin-left: 10px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
 
 .menu {
@@ -53,29 +83,30 @@
 }
 
 .flag {
-  align-items: center;
   margin-left: 15px;
 }
 
 .en {
-  margin-left: 15px;
+  margin: 0 15px;
 }
 
-.filtr {
-  margin-left: 15px;
- }
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
 
 .login {
-  width: 100px;
-  height: 40px;
-  margin-right: 180px;
-  border: 1px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 6px;
-  align-items: center;
-  background-color: transparent;
-  text-transform: uppercase;
   color: #fff;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  padding: 10px 20px;
+  text-transform: uppercase;
   outline: none;
 }
 
@@ -85,18 +116,15 @@
 
 .сloudbudget {
   text-align: center;
-  margin-top: 170px;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
   line-height: 86px;
-  align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .text {
-  margin-top: 39px;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -105,24 +133,21 @@
 }
 
 .text p {
-  margin-top: 0px;
-  margin-bottom: 0px; 
+  margin: 0;
 }
 
 .sign {
-  width: 160px;
-  height: 50px;
-  margin-left: 45%;
-  margin-right: 45%;
-  margin-top: 70px;
   background: #FFFFFF;
   border:0px;
   border-radius: 6px;
   color: #ED4C5C;
-  box-sizing: border-box;  
-  align-items: center;
   text-transform: uppercase;
-  outline:none
+  outline:none;
+
+  box-sizing: border-box;
+  margin-top: 70px;
+  width: 160px;
+  height: 50px;
 }
 
 .sign:hover {
